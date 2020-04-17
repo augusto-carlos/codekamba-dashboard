@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.login-container form h3 {
+    color: #a6b2bd;
+}
+
+.login-container form input, .login-container form button {
+    font-family: 'Roboto';
+    padding: 10px;
+    min-width: 250px;
+    margin-top: 12px;
+    border-radius: 4px;
+    color: #a6b2bd;
+    border: none;
+}
+
+.login-container form input {
+    background: rgba(255, 255, 255, .1);
+}
+
+
+.login-container form button {
+    background-color: #03b499;
+    color: #fff;
+}

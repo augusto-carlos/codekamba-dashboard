@@ -1,0 +1,31 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div svg {
+    margin: 0 10px;
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+  }
+  
+  header .login {
+    font-size: 11px;
+  }

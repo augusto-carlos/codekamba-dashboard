@@ -1,0 +1,76 @@
+
+  aside .logo-container {
+    background-color: rgba(0, 0, 0, .2);
+    height: 50px;
+  }
+
+  aside .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #4dbeaf;
+    font-size: 18px;
+  }
+
+  aside .logo-container svg {
+    margin: 0 10px;
+  }
+
+  aside .sidenav-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+    height: 70px;
+    padding: 0 80px;
+  }
+
+  aside .sidenav-search  input{
+    border: none;
+    background: rgba(251, 251, 251, 0.15);
+    padding: 5px;
+    border: 1px solid rgba(102, 102, 102, 0.096);
+    border-radius: 2px;
+    color: #a6b2bd;
+  }
+
+  aside ul h4 {
+    font-size: 16px;
+    color: rgba(192, 192, 192, 0.459);
+    padding-left: 17px;
+    margin-bottom: 10px;
+  }
+
+
+  aside ul li {
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  aside ul li label {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  aside a{
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #b8b8b8;
+  }
+
+  aside a svg {
+    margin-right: 15px;
+  }
+  
+  aside ul li a:hover {
+   background: rgba(0, 0, 0, 0.055);
+  }
+  
+
+  aside a.aside-item-actived {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.109);
+  }
+  

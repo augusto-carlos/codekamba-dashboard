@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/Roboto-Regular.ttf)
+}
+
+body {
+   background: linear-gradient(45deg, #000000, #335685);
+}
+
+body , ul, li, a{
+  color: #dbdbdb;
+  margin: 0;
+  font-family: 'Roboto', 'segoe ui', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: rgba(245, 248, 248, 0.055);
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+button {
+    border: 1px solid rgba(181, 181, 181, 0.233);
+    padding: 10px;
+    border-radius: 2px;
+}
