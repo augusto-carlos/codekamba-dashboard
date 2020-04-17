@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import api from '../../services/api';
+//import api from '../../services/api';
 import Header from '../../components/Header';
 
 import './styles.css';
@@ -12,21 +12,21 @@ const Login = () => {
 
     const history = useHistory();
 
-    async function handleLogin(e) {
-        e.preventDefault()
+    // async function handleLogin(e) {
+    //     e.preventDefault()
 
-        try {
+    //     try {
 
-            const res = await api.post('session', { email, password })
-            localStorage.setItem('userID', res.data._id)
-            localStorage.setItem('userName', res.data.name)
-            history.push('/home');
+    //         const res = await api.post('session', { email, password })
+    //         localStorage.setItem('userID', res.data._id)
+    //         localStorage.setItem('userName', res.data.name)
+    //         history.push('/home');
 
-        } catch (err) {
-            console.log(err)
-        }
+    //     } catch (err) {
+    //         console.log(err)
+    //     }
 
-    }
+    // }
 
     return (
         <div>
@@ -34,7 +34,7 @@ const Login = () => {
             <div className="container">
 
                 <div className="login-container">
-                    <form onSubmit={handleLogin}>
+                    <form>
                         <h3>Faça o Login</h3>
 
                         <input

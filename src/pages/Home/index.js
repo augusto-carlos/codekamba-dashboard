@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React/*, { useState, useEffect }*/ from 'react';
 import { Line, Bar } from 'react-chartjs-2';
 
 import { FaAngular, FaVuejs, FaReact, FaBootstrap, FaExpandArrowsAlt, FaRegWindowClose } from 'react-icons/fa';
 import { AiOutlineUser } from 'react-icons/ai';
-import api from '../../services/api';
+//import api from '../../services/api';
 
 import './styles.css'
 
@@ -11,18 +11,18 @@ import './styles.css'
 export default function Home() {
 
 
-    const [users, setUsers] = useState([]);
-    const user = {
-        name: localStorage.getItem('userName'),
-        id: localStorage.getItem('userId')
-    }
+    // const [users, setUsers] = useState([]);
+    // const user = {
+    //     name: localStorage.getItem('userName'),
+    //     id: localStorage.getItem('userId')
+    // }
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        api.get('usuarios')
-            .then(res => setUsers(res.data))
+    //     api.get('usuarios')
+    //         .then(res => setUsers(res.data))
 
-    }, [user.id]);
+    // }, [user.id]);
 
     const data = {
         labels: ['Jan', 'Fev', 'Marc', 'Abr', 'Maio', 'Jun', 'Jul'],
@@ -118,7 +118,7 @@ export default function Home() {
 
 
             <div className="last-users-container">
-
+{/* 
                 {users.map(user => (
                     <div className="user-card" key={user._id}>
                         <AiOutlineUser />
@@ -128,7 +128,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                ))}
+                ))} */}
             </div>
 
         </div>
