@@ -1,5 +1,5 @@
 import React from 'react';
-import { TiLightbulb, TiBookmark, TiHome,  TiMessage, TiWeatherCloudy, TiInfoLarge, TiThLargeOutline } from 'react-icons/ti';
+import { TiUserOutline, TiBookmark, TiHome,  TiMessage, TiWeatherCloudy, TiInfoLarge, TiThLargeOutline } from 'react-icons/ti';
 import { NavLink } from 'react-router-dom';
 
 
@@ -72,7 +72,7 @@ const SideNav = () => {
 
                 <li>
                     <NavLink to="usuarios" activeClassName="aside-item-actived">
-                        <TiLightbulb size={18} />
+                        <TiUserOutline size={18} />
                         <label>Usuários</label>
                     </NavLink>
                 </li>
