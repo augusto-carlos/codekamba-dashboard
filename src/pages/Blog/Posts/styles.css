@@ -2,7 +2,6 @@
 div.posts-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 
@@ -18,12 +17,12 @@ div.posts-header {
 div.post-card {
     background-color: rgba(212, 212, 212, 0.082);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.07);
-    margin: 10px 4px;
+    margin: 10px;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid #ffffff12;
-    max-width: 350px;
+    width: 350px;
 }
 
 
@@ -51,6 +50,13 @@ div.post-card-header .category {
 
 div.post-card-header > svg {
     float: right;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
+div.post-card-header > svg:hover {
+    background-color: rgba(194, 62, 62, 0.322);
 }
 
 div.post-card-footer {
@@ -58,3 +64,40 @@ div.post-card-footer {
     justify-content: space-between;
     padding: 10px 5px;
 }
+
+/* ================= MODAL =================== */
+
+.modal-add-post {
+    background-color: rgb(26, 43, 67);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.178);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.071);
+    width: 500px;
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    margin: 0 auto;
+    color: #a6b2bd;
+    display: none;
+}
+
+.modal-add-post form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-add-post form textarea {
+    resize: vertical;
+}
+
+.modal-add-post-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.modal-add-post-header svg {
+    float: right;
+}
+
+

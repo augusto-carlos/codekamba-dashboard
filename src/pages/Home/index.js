@@ -43,40 +43,40 @@ export default function Home() {
                 <div className="status-card">
                     <FaAngular />
                     <h6>576%</h6>
-                    <small>lorem, dlor irtom</small>
+                    <small>Angular</small>
                 </div>
 
 
                 <div className="status-card">
                     <FaReact />
                     <h6>576%</h6>
-                    <small>lorem, dlor irtom</small>
+                    <small>React</small>
                 </div>
 
 
                 <div className="status-card">
                     <FaVuejs />
                     <h6>576%</h6>
-                    <small>lorem, dlor irtom</small>
+                    <small>Vue</small>
                 </div>
 
                 <div className="status-card">
                     <FaBootstrap />
                     <h6>576%</h6>
-                    <small>lorem, dlor irtom</small>
+                    <small>Bootstrap</small>
                 </div>
 
 
             </div>
             <div className="chart-container">
-                <div className="chart" style={{ width: '370px', height: '370px' }}>
+                <div className="chart" style={{ width: '360px', height: '360px' }}>
                     <Line
                         data={data}
                         options={{ maintainAspectRatio: false }}
                     />
                 </div>
 
-                <div className="chart" style={{ width: '370px', height: '370px' }}>
+                <div className="chart" style={{ width: '360px', height: '360px' }}>
                     <Bar
                         data={data}
                         options={{ maintainAspectRatio: false }}
