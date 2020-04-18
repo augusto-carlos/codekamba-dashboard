@@ -1,24 +1,24 @@
-import React/*, { useState, useEffect }*/ from 'react';
+import React, { useState, useEffect } from 'react';
 import {FiMoreHorizontal, FiClock} from 'react-icons/fi';
-//import api from '../../../services/api';
+import api from '../../../services/api';
 
 import './styles.css'
 
 const Posts = () => {
 
     
-    // const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     api.get('posts')
-    //         .then(res => setPosts(res.data))
+        api.get('posts')
+            .then(res => setPosts(res.data))
 
-    // }, [posts]);
+    }, [posts]);
 
     return (
         <div className="posts-container">
-            {/* {posts.map( post => (
+            {posts.map( post => (
 
                 <div className="post-card" key={post._id}>
                     <div className="post-header">
@@ -37,7 +37,7 @@ const Posts = () => {
                     </div>
                 </div>
 
-            ))} */}
+            ))}
 
         </div>
     );
