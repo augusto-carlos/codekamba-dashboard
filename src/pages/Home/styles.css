@@ -61,37 +61,6 @@
     margin: 4px 20px;
 }
 
-.last-users-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.last-users-container .user-card {
-    display: flex;
-    align-items: center;
-    margin: 20px 10px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.03);
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.17);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid rgba(212, 212, 212, 0.14);
-}
-
-.last-users-container .user-card svg {
-    color: #4fa9d3;
-    font-size: 18px;
-    margin: 10px;
-    border-radius: 50%;
-    padding: 10px;
-    border: 1px dashed #4fd3bd;
-}
-
-.last-users-container .user-card p {
-    color: #eee;
-}
-
 .notification-container {
     padding: 20px;
     max-width: 300px;

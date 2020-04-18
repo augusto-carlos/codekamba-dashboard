@@ -2,6 +2,7 @@ import React from 'react';
 import { TiLightbulb, TiBookmark, TiHome,  TiMessage, TiWeatherCloudy, TiInfoLarge, TiThLargeOutline } from 'react-icons/ti';
 import { NavLink } from 'react-router-dom';
 
+
 import { GoSettings, GoPulse, GoRepo, GoGear } from 'react-icons/go';
 
 
@@ -11,7 +12,7 @@ const SideNav = () => {
     return (
         <aside className="sidenav">
             <div className="logo-container">
-                <GoSettings /> <h3>Dashboard</h3>
+                <h3><GoSettings /> Codekamba</h3>
             </div>
 
             <ul>

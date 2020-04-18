@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
-import Header from '../../components/Header';
 
 import './styles.css';
 
@@ -30,11 +29,10 @@ const Login = () => {
 
     return (
         <div>
-            <Header />
             <div className="container">
 
                 <div className="login-container">
-                    <form>
+                    <form onSubmit={handleLogin}>
                         <h3>Faça o Login</h3>
 
                         <input

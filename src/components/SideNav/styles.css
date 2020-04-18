@@ -1,15 +1,11 @@
 
   aside .logo-container {
-    background-color: rgba(0, 0, 0, .2);
-    height: 50px;
-  }
-
-  aside .logo-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     color: #4dbeaf;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, .2);
+    height: 50px;
   }
 
   aside .logo-container svg {
@@ -38,7 +34,7 @@
     font-size: 16px;
     color: rgba(192, 192, 192, 0.459);
     padding-left: 17px;
-    margin-bottom: 10px;
+    margin: 15px 0;
   }
 
 

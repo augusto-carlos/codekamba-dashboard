@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Login from './pages/Login';
 
-import Users from './pages/Users';
+import Users from './pages/Blog/Users';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
@@ -31,7 +31,7 @@ function App() {
             <Route path="/repositorios" component={Projects} />
           </Switch>
         </main>
-        <footer class="footer"></footer>
+        <footer className="footer"></footer>
       </Router>
     </div>
   );
