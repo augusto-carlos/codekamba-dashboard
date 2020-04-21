@@ -14,40 +14,41 @@
     margin: 10px;
     min-width: 200px;
     display: flex;
-    flex-direction: column;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .status-card svg {
     padding: 10px;
-    background: rgba(255, 255, 255, 0.185);
+    background: rgba(255, 255, 255, 0.123);
     border-radius: 50%;
     font-size: 25px;
 }
 
 .status-card:nth-child(1){
-    background: linear-gradient(35deg, rgba(255, 63, 5, 0.281), rgba(255, 60, 0, 0.835));
+    background: linear-gradient(35deg, rgba(255, 63, 5, 0.191), rgba(255, 60, 0, 0.835));
 }
 
 .status-card:nth-child(2) {
-    background: linear-gradient(35deg, rgba(3, 153, 180, 0.281), rgba(3, 153, 180, 0.623));
+    background: linear-gradient(35deg, rgba(3, 153, 180, 0.191), rgba(3, 153, 180, 0.623));
 }
 
 .status-card:nth-child(3) {
-    background: linear-gradient(35deg, rgba(26, 235, 155, 0.281), rgba(26, 235, 154, 0.733));
+    background: linear-gradient(35deg, rgba(26, 235, 155, 0.191), rgba(26, 235, 154, 0.733));
 }
 
 .status-card:nth-child(4) {
-    background: linear-gradient(35deg, rgba(133, 3, 209, 0.281), rgba(133, 3, 209, 0.623));
+    background: linear-gradient(35deg, rgba(133, 3, 209, 0.191), rgba(133, 3, 209, 0.623));
 }
 
 .status-container .status-card h6{
     font-size: 26px;
-    font-weight: lighter;
     margin: 2px 0;
 }
 
 .status-container .status-card small {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .chart-container {
@@ -68,9 +69,13 @@
 
 .notification-container .notification-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0px 0px 10px 0px;
     color: #f4f4f487;
+}
+
+.notification-header svg{
+    font-size: 19px;
 }
 
 .notification-container h3 {

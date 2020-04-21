@@ -1,10 +1,9 @@
 import React from 'react';
 import { Line, Bar } from 'react-chartjs-2';
 
-import { FaAngular, FaVuejs, FaReact, FaBootstrap, FaExpandArrowsAlt, FaRegWindowClose } from 'react-icons/fa';
+import { TiMessage, TiUserOutline, TiBookmark, TiHeartOutline, TiDelete } from 'react-icons/ti';
 
 import './styles.css'
-
 
 export default function Home() {
 
@@ -41,33 +40,34 @@ export default function Home() {
 
             <div className="status-container">
                 <div className="status-card">
-                    <FaAngular />
-                    <h6>576%</h6>
-                    <small>Angular</small>
+                    <TiBookmark />
+                    <h6>576</h6>
+                    <small>Postagens</small>
                 </div>
 
 
                 <div className="status-card">
-                    <FaReact />
-                    <h6>576%</h6>
-                    <small>React</small>
+                    <TiMessage />
+                    <h6>576</h6>
+                    <small>Comentários</small>
                 </div>
 
 
                 <div className="status-card">
-                    <FaVuejs />
-                    <h6>576%</h6>
-                    <small>Vue</small>
+                    <TiUserOutline />
+                    <h6>576</h6>
+                    <small>Pessoas</small>
                 </div>
 
                 <div className="status-card">
-                    <FaBootstrap />
-                    <h6>576%</h6>
-                    <small>Bootstrap</small>
+                    <TiHeartOutline />
+                    <h6>576</h6>
+                    <small>Reacções</small>
                 </div>
 
 
             </div>
+
             <div className="chart-container">
                 <div className="chart" style={{ width: '360px', height: '360px' }}>
                     <Line
@@ -85,11 +85,9 @@ export default function Home() {
 
                 <div className="notification-container">
                     <div className="notification-header">
+                       
                         <span>
-                            <FaExpandArrowsAlt />
-                        </span>
-                        <span>
-                            <FaRegWindowClose />
+                            <TiDelete />
                         </span>
                     </div>
                     <h3>Alguma notificação importante.</h3>

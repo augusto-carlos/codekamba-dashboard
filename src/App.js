@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Posts from './pages/Blog/Posts';
+import NewPost from './pages/Blog/Posts/NewPost';
+
 
 import Header from './components/Header';
 import SideNav from './components/SideNav';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
 import Login from './pages/Login';
 
-import Users from './pages/Blog/Users';
 import Home from './pages/Home';
+import Posts from './pages/Blog/Posts';
 import Projects from './pages/Projects';
+import Users from './pages/Blog/Users';
 
 function App() {
 
@@ -22,17 +24,18 @@ function App() {
         <SideNav />
         <main className="main">
           <Switch>
-            <Route exact path="/" component={Login} />
+            <Route path="/" exact component={Login} />
             <Route path="/home" component={Home} />
             <Route path="/usuarios" component={Users} />
             
-            <Route path="/posts" component={Posts} />
-            
+            <Route path="/posts" exact component={Posts} />
+            <Route path="/posts/new" component={NewPost} />
+
             <Route path="/repositorios" component={Projects} />
           </Switch>
         </main>
-        <footer className="footer"></footer>
       </Router>
+      <footer className="footer"></footer>
     </div>
   );
 }

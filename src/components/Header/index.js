@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdAccountCircle, MdSearch, MdExpandMore, MdApps } from 'react-icons/md';
+import { MdAccountCircle, MdExpandMore } from 'react-icons/md';
 import './styles.css';
 
 
@@ -13,11 +13,10 @@ const Header = () => {
 
     return (
         <header className="header">
-
         
             <div className="login">
                 <MdAccountCircle size={24} />
-                <span>{user ? user.name : 'nome do usuário'}<MdExpandMore /></span>
+                <span>{user ? user.name : 'nome do usuário'} <MdExpandMore /></span>
             </div>
 
         </header>
