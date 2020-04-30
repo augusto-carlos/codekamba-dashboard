@@ -19,7 +19,7 @@ const SideNav = () => {
                 <h4>Blog</h4>
                 
                 <li>
-                    <NavLink to="/home" activeClassName="aside-item-actived">
+                    <NavLink to="/" activeClassName="aside-item-actived">
                         <TiHome size={18} />
                         <label>Home</label>
                     </NavLink>
