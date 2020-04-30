@@ -1,17 +1,21 @@
 
-.last-users-container {
-    display: flex;
-    flex-direction: column;
-}
 
-.last-users-container .user-card {
+.users-container .user-card {
     display: flex;
     align-items: center;
     margin: 6px 10px;
     padding: 5px;
 }
 
-.last-users-container .user-card svg {
+.users-header {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 105px;
+}
+
+.users-container .user-card svg {
     color: #b99c3c;
     font-size: 25px;
     margin: 10px;
@@ -19,6 +23,19 @@
     padding: 10px;
 }
 
-.last-users-container .user-card p {
+.users-container .user-card p {
     color: rgba(185, 185, 185, 0.534);
+}
+
+/* ===================== ADD USER CONTAINER ========================*/
+.add-post-container .btn-back {
+    float: right;
+}
+.add-user-container {
+    width: 300px;
+    margin: 20px auto;
+}
+.add-user-container form{
+    display: flex;
+    flex-direction: column;
 }

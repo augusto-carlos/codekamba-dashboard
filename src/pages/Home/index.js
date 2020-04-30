@@ -41,28 +41,36 @@ export default function Home() {
             <div className="status-container">
                 <div className="status-card">
                     <TiBookmark />
-                    <h6>576</h6>
-                    <small>Postagens</small>
+                    <div className="status-card-text">
+                        <h6>576</h6>
+                        <small>Postagens</small>
+                    </div>
                 </div>
 
 
                 <div className="status-card">
                     <TiMessage />
-                    <h6>576</h6>
-                    <small>Comentários</small>
+                    <div className="status-card-text">
+                        <h6>576</h6>
+                        <small>Comentários</small>
+                    </div>
                 </div>
 
 
                 <div className="status-card">
                     <TiUserOutline />
-                    <h6>576</h6>
-                    <small>Pessoas</small>
+                    <div className="status-card-text">
+                        <h6>576</h6>
+                        <small>Pessoas</small>
+                    </div>
                 </div>
 
                 <div className="status-card">
                     <TiHeartOutline />
-                    <h6>576</h6>
-                    <small>Reacções</small>
+                    <div className="status-card-text">
+                        <h6>576</h6>
+                        <small>Reacções</small>
+                    </div>
                 </div>
 
 

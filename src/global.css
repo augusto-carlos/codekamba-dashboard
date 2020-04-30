@@ -7,12 +7,12 @@
 
 }
 body {
-   background: linear-gradient(45deg, #000000, #335685);
+   background: #f6f6f6;
    font-size: 13px;
 }
 
 body , ul, li, a{
-  color: #dbdbdb;
+  color: #575757;
   font-family: Roboto, 'segoe ui', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 .grid-container {
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-rows: 50px 1fr 20px;
+  grid-template-rows: 37px 1fr 20px;
   grid-template-areas:
     "sidenav header"
     "sidenav main"
@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidenav {
   grid-area: sidenav;
-  background-color: rgba(245, 248, 248, 0.055);
 }
 
 .main {
@@ -76,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-input[type="text"], input[type="search"], select, textarea {
+input , select, textarea {
   border: none;
   background: rgba(129, 129, 129, 0.12);
   padding: 7px 5px;

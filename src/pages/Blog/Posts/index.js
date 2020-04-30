@@ -16,7 +16,9 @@ const Posts = () => {
     useEffect(() => {
 
         api.get('posts')
-            .then(res => setPosts(res.data))
+            .then(res => {
+                setPosts(res.data)
+            })
 
     }, []);
 
@@ -58,7 +60,7 @@ const Posts = () => {
                             <small><FiClock /> {post.date}</small>
                         </div>
                         <div className="post-card-body">
-                            <p>{post.content.split(' ').slice(0, 100).join(' ')+'...'}</p>
+                            <p>{post.content.split(' ').slice(0, 50).join(' ')+'...'}</p>
                         </div>
                         <div className="post-card-footer">
                             <small>{post.slug}</small>

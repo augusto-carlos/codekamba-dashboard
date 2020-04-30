@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import alertify from 'alertifyjs';
 import { Link, useHistory } from 'react-router-dom';
-import {FiArrowLeft} from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../../services/api';
 
@@ -39,8 +39,8 @@ const NewPost = () => {
     return (
         <div>
 
-            <div className="container-add-post">
-                <Link to="/posts" className="button"><FiArrowLeft/> Voltar</Link>
+            <div className="add-post-container">
+                <Link to="/posts" className="button btn-back"><FiArrowLeft /> Voltar</Link>
                 <div className="container-add-post-header">
                     <h3>Adicionar novo post</h3>
                 </div>

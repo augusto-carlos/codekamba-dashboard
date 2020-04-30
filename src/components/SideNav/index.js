@@ -11,7 +11,8 @@ const SideNav = () => {
     return (
         <aside className="sidenav">
             <div className="logo-container">
-                <h3><GoSettings /> Dashboard</h3>
+                <h3>Codetrial</h3>
+                <small>dashboard</small>
             </div>
 
             <ul>
@@ -46,7 +47,7 @@ const SideNav = () => {
                 </li>
 
                 <li>
-                    <NavLink to="/usuarios" activeClassName="aside-item-actived">
+                    <NavLink to="/users" activeClassName="aside-item-actived">
                         <TiUserOutline size={18} />
                         <label>Usuários</label>
                     </NavLink>

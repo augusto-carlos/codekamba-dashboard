@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NewUser from './pages/Blog/Users/NewUser';
+
 import NewPost from './pages/Blog/Posts/NewPost';
 
 
@@ -26,8 +28,9 @@ function App() {
           <Switch>
             <Route path="/" exact component={Login} />
             <Route path="/home" component={Home} />
-            <Route path="/usuarios" component={Users} />
-            
+            <Route path="/users" exact component={Users} />
+            <Route path="/users/new" component={NewUser} />
+
             <Route path="/posts" exact component={Posts} />
             <Route path="/posts/new" component={NewPost} />
 
