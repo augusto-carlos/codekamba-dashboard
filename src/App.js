@@ -26,8 +26,7 @@ function App() {
         <SideNav />
         <main className="main">
           <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/home" component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/users" exact component={Users} />
             <Route path="/users/new" component={NewUser} />
 
