@@ -1,5 +1,4 @@
 
-
 .users-container .user-card {
     display: flex;
     align-items: center;
@@ -16,7 +15,7 @@
 }
 
 .users-container .user-card svg {
-    color: #b99c3c;
+    color: #4cbfaf;
     font-size: 25px;
     margin: 10px;
     border-radius: 50%;
@@ -28,9 +27,7 @@
 }
 
 /* ===================== ADD USER CONTAINER ========================*/
-.add-post-container .btn-back {
-    float: right;
-}
+
 .add-user-container {
     width: 300px;
     margin: 20px auto;

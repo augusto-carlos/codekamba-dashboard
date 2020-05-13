@@ -3,6 +3,7 @@ import { GoPlus, GoSearch, GoPerson } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import alertify from 'alertifyjs';
 
+import Search from '../../../components/Search'
 import api from '../../../services/api';
 import './styles.css';
 
@@ -14,7 +15,7 @@ const Users = () => {
 
     useEffect(() => {
 
-        api.get('usuarios')
+        api.get('users')
             .then(res => setUsers(res.data))
 
     }, []);
@@ -32,11 +33,7 @@ const Users = () => {
         <div className="content">
 
             <div className="users-header">
-                <form>
-                    <div className="search">
-                        <input type="search" /> <GoSearch />
-                    </div>
-                </form>
+                <Search placeholder="buscar por usuários..." />
                 <Link to="users/new" className="button">
                     <GoPlus /> Adicionar
             </Link>

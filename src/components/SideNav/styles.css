@@ -43,30 +43,30 @@
     cursor: pointer;
     transition: .2s;
   }
-  
+
   aside ul li label {
     cursor: pointer;
   }
-  
+
   aside a{
     display: flex;
     align-items: center;
-    padding: 17px;
+    padding: 15px;
     text-decoration: none;
     color: #b8b8b8;
+    transition: .2s;
   }
 
   aside a svg {
     margin-right: 15px;
   }
-  
+
   aside ul li a:hover {
-   background: rgba(0, 0, 0, 0.055);
+   background: rgba(0, 0, 0, 0.068);
   }
-  
+
 
   aside a.aside-item-actived {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.178);
+    color: #4dbeaf;
+    border-left: 3px solid #4dbeaf;
   }
-  

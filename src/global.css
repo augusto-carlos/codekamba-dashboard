@@ -7,12 +7,12 @@
 
 }
 body {
-   background: #f6f6f6;
+   background: #f2fbff;
    font-size: 13px;
 }
 
 body , ul, li, a{
-  color: #575757;
+  color: #6b6b6b;
   font-family: Roboto, 'segoe ui', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -27,19 +27,26 @@ code {
 }
 
 input, button, textarea {
-  font: 400 12px Roboto, sans-serif;
+  font: 400 14px Roboto, sans-serif;
 }
 
 button , .button{
-    background: rgba(255, 255, 255, 0.096);
+    background: #4cbfaf;
     cursor: pointer;
-    padding: 7px 5px;
-    border-radius: 2px;
+    padding: 7px;
+    border-radius: 3px;
     text-decoration: none;
-    color: #d1d1d1;
-    font-weight: 600;
-    border: 1px solid #4dbeaf65;
+    color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #43b8a9;
     margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button , .button svg {
+    margin-right: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,17 +83,27 @@ h1, h2, h3, h4, h5, h6 {
 
 
 input , select, textarea {
-  border: none;
-  background: rgba(129, 129, 129, 0.12);
-  padding: 7px 5px;
-  border: 1px solid rgba(94, 191, 178, 0.17);
-  border-radius: 2px;
-  min-width: 300px;
-  color: #a6b2bd;
-  margin: 10px 0;
-  font-family: Roboto, 'segoe ui';
+    border: none;
+    background: #fff;
+    padding: 7px 5px;
+    border: 1px solid rgba(191, 191, 191, 0.44);
+    border-radius: 4px;
+    margin: 10px 0;
+    font-family: Roboto, 'segoe ui';
 }
 
-.alertify .ajs-dialog {
-  color: #afafaf;
+.alertify {
+  color: #fff;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: #4cbfaf;
+    text-decoration: underline;
+    padding: 0px;
+}
+.alertify-notifier .ajs-message {
+    color: #fff;
+    text-shadow: 1px 1px 1px #444;
 }

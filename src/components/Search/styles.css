@@ -1,0 +1,15 @@
+.input-search {
+    position: relative;
+}
+
+.input-search input {
+    padding-left: 27px;
+    min-width: 300px;
+}
+
+.input-search svg {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    color: #b8b8b8;
+}

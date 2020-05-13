@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FiTrash, FiClock } from 'react-icons/fi';
-import { GoSearch, GoPlus } from 'react-icons/go';
+import { FiTrash } from 'react-icons/fi';
+import { GoPlus } from 'react-icons/go';
+import Search from '../../../components/Search'
 
 import alertify from 'alertifyjs';
 
 import api from '../../../services/api';
 import './styles.css'
-import './alertify.min.css';
+import '../alertify.min.css';
 
 const Posts = () => {
 
@@ -38,11 +39,7 @@ const Posts = () => {
         <div className="content">
 
             <div className="posts-header">
-                <form>
-                    <div className="search">
-                        <input type="search" /> <GoSearch />
-                    </div>
-                </form>
+                <Search placeholder="buscar por posts..."/>
                 <Link to="posts/new" className="button">
                     <GoPlus /> Adicionar
                 </Link>
@@ -57,7 +54,6 @@ const Posts = () => {
                             <FiTrash onClick={() => handleDeletePost(post._id)} />
                             <small className="category">{post.category.name}</small>
                             <h3>{post.title}</h3>
-                            <small><FiClock /> {post.date}</small>
                         </div>
                         <div className="post-card-body">
                             <p>{post.content.split(' ').slice(0, 50).join(' ')+'...'}</p>
