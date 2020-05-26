@@ -53,14 +53,14 @@ const Posts = () => {
                         <div className="post-card-header">
                             <FiTrash onClick={() => handleDeletePost(post._id)} />
                             <small className="category">{post.category.name}</small>
-                            <h3>{post.title}</h3>
+                            <h3 className="text-large">{post.title}</h3>
+                            <small>Por <strong>{post.author.username}</strong></small>
                         </div>
                         <div className="post-card-body">
                             <p>{post.content.split(' ').slice(0, 50).join(' ')+'...'}</p>
                         </div>
                         <div className="post-card-footer">
                             <small>{post.slug}</small>
-                            <small>Nome do autor</small>
                         </div>
                     </div>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -7,13 +7,13 @@
 
 }
 body {
-   background: #f2fbff;
+   background: #ffffff;
    font-size: 13px;
 }
 
 body , ul, li, a{
-  color: #6b6b6b;
-  font-family: Roboto, 'segoe ui', 'Oxygen',
+  color: #818181;
+  font-family: Nunito, 'segoe ui', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,18 +27,18 @@ code {
 }
 
 input, button, textarea {
-  font: 400 14px Roboto, sans-serif;
+  font: 400 14px Nunito, sans-serif;
 }
 
 button , .button{
-    background: #4cbfaf;
+    background: #559bfe;
     cursor: pointer;
     padding: 7px;
     border-radius: 3px;
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    border: 1px solid #43b8a9;
+    border: 1px solid #4987df;
     margin: 5px 0;
     display: flex;
     align-items: center;
@@ -55,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  grid-template-rows: 37px 1fr 20px;
+  grid-template-columns: 175px 1fr;
+  grid-template-rows: 50px 1fr 20px;
   grid-template-areas:
     "sidenav header"
     "sidenav main"
@@ -66,10 +66,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   grid-area: header;
+  border-bottom: 1px solid #eee;
 }
 
 .sidenav {
   grid-area: sidenav;
+  background: #f5f5f5;
+  box-shadow: inset 2px 2px 10px rgba(86, 86, 86, 0.05);
 }
 
 .main {
@@ -82,28 +85,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-input , select, textarea {
-    border: none;
-    background: #fff;
-    padding: 7px 5px;
-    border: 1px solid rgba(191, 191, 191, 0.44);
-    border-radius: 4px;
-    margin: 10px 0;
-    font-family: Roboto, 'segoe ui';
+.text-large{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #535353;
 }
 
-.alertify {
-  color: #fff;
+
+input , select, textarea {
+      border: none;
+    background: #fff;
+    padding: 7px 5px;
+    border: 1px solid rgba(168, 168, 168, 0.44);
+    border-radius: 4px;
+    margin: 10px 0;
+    font-family: Nunito, 'segoe ui';
 }
 
 .btn-back {
     background: none;
     border: none;
-    color: #4cbfaf;
+    color: #559bfe;
     text-decoration: underline;
     padding: 0px;
-}
-.alertify-notifier .ajs-message {
-    color: #fff;
-    text-shadow: 1px 1px 1px #444;
 }

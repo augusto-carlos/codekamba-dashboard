@@ -15,7 +15,7 @@ export default function Home() {
                 fill: true,
                 lineTension: 0.1,
                 backgroundColor: 'rgba(75,192,192,0.09)',
-                borderColor: '#4dbeaf',
+                borderColor: '#559bfe',
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 0.0,
@@ -93,12 +93,12 @@ export default function Home() {
 
                 <div className="notification-container">
                     <div className="notification-header">
-                       
+
                         <span>
                             <TiDelete />
                         </span>
                     </div>
-                    <h3>Alguma notificação importante.</h3>
+                    <h3 className="text-large">Alguma notificação importante.</h3>
                     <small>Lorem, ipsum dolor.</small>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
                 </div>

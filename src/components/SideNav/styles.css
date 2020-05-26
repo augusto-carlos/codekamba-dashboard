@@ -1,39 +1,35 @@
-  aside {
-    background: #122135;
-  }
 
   aside .logo-container {
     font-size: 20px;
-    background-color: rgba(0, 0, 0, .2);
+    font-weight: bold;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.394);
   }
 
   aside .logo-container h3 {
-    color: #4dbeaf;
-    font-weight: 300;
+    color: rgb(255, 255, 255);
   }
 
   aside .logo-container small {
     font-size: 11px;
-    color: #dfdfdf;
+    color: #c5c5c5;
   }
 
   aside .sidenav-search {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, .2);
     height: 70px;
     padding: 0 80px;
   }
 
   aside ul h4 {
     font-size: 16px;
-    color: rgba(192, 192, 192, 0.459);
+    color: rgba(170, 170, 170, 0.755);
     padding-left: 17px;
     margin: 15px 0;
   }
@@ -51,9 +47,8 @@
   aside a{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 14px;
     text-decoration: none;
-    color: #b8b8b8;
     transition: .2s;
   }
 
@@ -61,12 +56,23 @@
     margin-right: 15px;
   }
 
-  aside ul li a:hover {
-   background: rgba(0, 0, 0, 0.068);
+  aside a:hover {
+    color: rgb(104, 167, 255);
   }
-
 
   aside a.aside-item-actived {
-    color: #4dbeaf;
-    border-left: 3px solid #4dbeaf;
+color: rgb(85, 155, 254);
+    font-weight: bold;
+    border-right: 4px solid #559bfe;
   }
+.sidenav-header {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e98d14;
+    color: #fff;
+    margin-bottom: 40px;
+}
+

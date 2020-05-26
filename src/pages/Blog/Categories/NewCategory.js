@@ -32,7 +32,7 @@ const NewCategory = () => {
 
             <section className="add-category-info">
                 <Link to="/posts" className="button btn-back"><FiArrowLeft /> Voltar</Link>
-                <h2>Adicione uma nova categoria ao blog</h2>
+                <h2 className="text-large">Adicione uma nova categoria ao blog</h2>
                 <small>Lorem ipsum, dolor assumenda!</small>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eaque nemo eius vel voluptates eligendi voluptate autem aperiam illo totam in minima quos repellendus molestiae.</p>
             </section>
