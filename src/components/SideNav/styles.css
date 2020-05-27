@@ -61,18 +61,17 @@
   }
 
   aside a.aside-item-actived {
-color: rgb(85, 155, 254);
+    color: rgb(246, 149, 22);
     font-weight: bold;
-    border-right: 4px solid #559bfe;
+    border-right: 4px solid #f69516;
   }
 .sidenav-header {
-    padding: 15px;
+    height: 49px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #e98d14;
-    color: #fff;
+    background: #eeeeee;
     margin-bottom: 40px;
 }
 

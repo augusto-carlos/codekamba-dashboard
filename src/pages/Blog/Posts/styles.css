@@ -19,13 +19,15 @@ div.posts-header button{
 
 
 div.post-card {
-    background-color: #fff;
+        background-color: #fff;
     margin: 10px;
     border-radius: 4px;
     width: 540px;
     transition: .2s;
     display: flex;
     flex-direction: column;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 10px #82828212;
 }
 
 div.post-card-header  h3 {
