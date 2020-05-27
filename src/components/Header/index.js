@@ -14,7 +14,6 @@ const Header = () => {
 
     function handleSideNav(){
         const container = document.querySelector('.grid-container')
-        console.log(container)
         container.classList.toggle('w-sidenav')
     }
 

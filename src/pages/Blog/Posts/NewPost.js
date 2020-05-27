@@ -6,7 +6,6 @@ import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../../services/api';
 
 import '../alertify.min.css';
-import imgPost from '../../../assets/img-posts.jpg'
 
 const NewPost = () => {
 
