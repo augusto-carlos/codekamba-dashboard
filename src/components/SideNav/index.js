@@ -1,5 +1,5 @@
 import React from 'react';
-import { TiUserOutline, TiBookmark, TiHome,  TiLockClosed } from 'react-icons/ti';
+import { TiUserOutline, TiBookmark, TiHome, TiLockClosed, TiFlashOutline, TiDatabase } from 'react-icons/ti';
 import { NavLink } from 'react-router-dom';
 
 import { FiGrid } from 'react-icons/fi';
@@ -10,9 +10,9 @@ const SideNav = () => {
     return (
         <aside className="sidenav">
             <div className="sidenav-header">
-                <h3>Codetrial</h3>
-                <small>dashboard</small>
+                <h3>Dashboard</h3>
             </div>
+            <h4>Blog</h4>
             <ul>
 
                 <li>
@@ -31,7 +31,7 @@ const SideNav = () => {
 
                 <li>
                     <NavLink to="/categories" activeClassName="aside-item-actived">
-                        <FiGrid/>
+                        <FiGrid />
                         <label htmlFor="#">Categorias</label>
                     </NavLink>
                 </li>
@@ -50,7 +50,22 @@ const SideNav = () => {
                     </NavLink>
                 </li>
             </ul>
+            <h4>Serviços</h4>
+            <ul>
+                <li>
+                    <NavLink to="/services" activeClassName="aside-item-actived">
+                        <TiFlashOutline size={18} />
+                        <label htmlFor="#">Serviços</label>
+                    </NavLink>
+                </li>
 
+                <li>
+                    <NavLink to="/banco" activeClassName="aside-item-actived">
+                        <TiDatabase size={18} />
+                        <label htmlFor="#">Banco de dados</label>
+                    </NavLink>
+                </li>
+            </ul>
         </aside>
     );
 }

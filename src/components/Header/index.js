@@ -1,16 +1,9 @@
 import React from 'react';
 
-import Search from '../Search';
-
-import { MdAccountCircle, MdExpandMore, MdMenu } from 'react-icons/md';
+import { MdAccountCircle, MdMenu, MdNotifications } from 'react-icons/md';
 import './styles.css';
 
 const Header = () => {
-
-    const user = {
-        name: localStorage.getItem('USER_NAME'),
-        id: localStorage.getItem('USER_ID')
-    }
 
     function handleSideNav(){
         const container = document.querySelector('.grid-container')
@@ -19,14 +12,13 @@ const Header = () => {
 
     return (
         <header className="header">
-            <MdMenu size={25} onClick={handleSideNav}/>
+            <MdMenu size={23} onClick={handleSideNav}/>
 
-            <Search placeholder="buscar por posts..." />
+            <h2>Codetrial</h2>
 
                 <div className="login">
+                    <MdNotifications size={24} />
                     <MdAccountCircle size={24} />
-                    <span>{user ? user.name : 'nome do usuário'}</span>
-                <MdExpandMore size={18} />
                 </div>
 
         </header>

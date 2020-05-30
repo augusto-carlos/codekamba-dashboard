@@ -22,7 +22,7 @@ const Categories = () => {
     function handleDeleteCategory(id){
         try {
             api.delete(`categories/${id}`)
-            setCategories(categories.filter(category => category._id !== id));
+            setCategories(categories.filter(category => category.id !== id));
         } catch (err) {
 
         }
@@ -42,9 +42,9 @@ const Categories = () => {
 
                 {categories.map(category => (
 
-                    <div className="category-card" key={category._id}>
+                    <div className="category-card" key={category.id}>
                         <div className="category-card-header">
-                            <FiTrash onClick={() => handleDeleteCategory(category._id)} />
+                            <FiTrash onClick={() => handleDeleteCategory(category.id)} />
                             <h3><FiTag /> {category.name}</h3>
                         </div>
                         <div className="category-card-body">

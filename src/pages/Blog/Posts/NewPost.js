@@ -11,6 +11,7 @@ const NewPost = () => {
 
     const [title, setTitle] = useState('');
     const [slug, setSlug] = useState('');
+    const [category, setCategory] = useState('');
     const [content, setContent] = useState('');
 
     const [categories, setCategories] = useState([]);
@@ -26,7 +27,6 @@ const NewPost = () => {
 
     function handleAddPost(e) {
         e.preventDefault()
-        const category = e.target.category.value
 
         api.post('posts', { title, slug, content, category })
 
@@ -69,9 +69,12 @@ const NewPost = () => {
 
                             <section>
                                 <label htmlFor="category">Categoria</label>
-                                <select name="category"  width="20px">
+                                <select
+                                name="category"
+                                width="20px"
+                                onChange={e => setCategory(e.target.value)}>
                                     {categories.map(category => (
-                                        <option key={category._id} value={category._id}>{category.name}</option>
+                                        <option key={category.id} value={category.id}>{category.name}</option>
                                     ))}
                                 </select>
                             </section>

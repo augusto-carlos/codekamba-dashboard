@@ -15,10 +15,13 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const user = await api.post('authenticate', { email, password })
-            login(user.data.token)
+            const res = await api.post('authenticate', { email, password })
+
+            if (login(res.data.token)) localStorage.setItem('USER_ID', res.data.id)
+
             alertify.success('Logado com sucesso!')
             return <Redirect to="/" />
+
         } catch (error) {
             alertify.warning('Email ou senha incorrecta. Tente de novamente :)')
         }

@@ -2,6 +2,7 @@
 div.posts-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -19,15 +20,15 @@ div.posts-header button{
 
 
 div.post-card {
-        background-color: #fff;
-    margin: 10px;
-    border-radius: 4px;
-    width: 540px;
+    background-color: #fff;
+    margin: 10px 0;
+    min-width: 503px;
     transition: .2s;
     display: flex;
     flex-direction: column;
     border: 1px solid #eee;
     box-shadow: 2px 2px 10px #82828212;
+    padding: 20px;
 }
 
 div.post-card-header  h3 {
@@ -44,8 +45,8 @@ div.post-card-header .category {
     display: inline-block;
     margin: 2px 0;
     padding: 3px 10px;
-    background: #f69516;
-    color: #fff;
+    background: rgba(226, 226, 226, 0.322);
+    color: #8f8f8f;
 }
 
 .post-card-body {
@@ -79,6 +80,7 @@ div.post-card-footer {
 .add-post-container {
     margin: 90px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }

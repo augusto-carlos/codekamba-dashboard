@@ -7,8 +7,7 @@
 
 }
 body {
-   background: #f5f5f5;
-   font-size: 13px;
+    background-color: #f9f9f9;
 }
 
 body , ul, li, a{
@@ -19,6 +18,7 @@ body , ul, li, a{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
+   font-size: 14px;
 }
 
 code {
@@ -31,14 +31,14 @@ input, button, textarea {
 }
 
 button , .button{
-background: #496c9d;
+    background: #8f8f8f;
     cursor: pointer;
     padding: 7px;
     border-radius: 3px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    border: 1px solid #34598c;
+    border: 1px solid #959595;
     margin: 5px 0;
     display: flex;
     align-items: center;
@@ -47,10 +47,6 @@ background: #496c9d;
 
 button , .button svg {
     margin-right: 5px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
 }
 
 .grid-container {
@@ -70,13 +66,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   grid-area: header;
-  border-bottom: 1px solid #eee;
 }
 
 .sidenav {
   grid-area: sidenav;
   overflow: hidden;
-  background: #eee;
+  background: #5bbd72;
 }
 
 .main {
@@ -98,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 input , select, textarea {
     background: #f8f8f8f2;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.03);
     padding: 7px 5px;
     margin: 10px 0;
     font-family: Nunito, 'segoe ui';

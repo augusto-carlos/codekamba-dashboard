@@ -1,12 +1,13 @@
 import React from 'react';
-import { MdMoodBad } from 'react-icons/md';
+import img404 from '../../assets/404-icon.svg';
 
+import './styles.css'
 
 const NotFound = () => {
     return (
-        <div>
-            <MdMoodBad />
-            <h3>Ups!</h3>
+        <div className="container404">
+            <img src={img404} width="300px"/>
+            <h3>Erro 404</h3>
             <p>Página não encontrada</p>
         </div>
     );

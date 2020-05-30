@@ -23,7 +23,7 @@ const Users = () => {
     async function handleDeleteUser(id) {
         try {
             await api.delete(`usuarios/${id}`)
-            setUsers(users.filter(user => user._id !== id));
+            setUsers(users.filter(user => user.id !== id));
         } catch (error) {
             alertify.error("Falha ao eliminar o usuário.")
         }
@@ -41,7 +41,7 @@ const Users = () => {
 
             <div className="users-container">
                 {users.map(user => (
-                    <div className="user-card" key={user._id} onClick={() => handleDeleteUser(user._id)}>
+                    <div className="user-card" key={user.id} onClick={() => handleDeleteUser(user.id)}>
                         <GoPerson />
                         <div>
                             <h4>{user.name}</h4>

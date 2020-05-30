@@ -27,11 +27,10 @@
     padding: 0 80px;
   }
 
-  aside ul h4 {
-    font-size: 16px;
-    color: rgba(170, 170, 170, 0.755);
-    padding-left: 17px;
-    margin: 15px 0;
+  aside h4 {
+    font-size: 15px;
+    color: #eeeeee;
+    padding: 7px 17px;
   }
 
 
@@ -50,6 +49,7 @@
     padding: 14px;
     text-decoration: none;
     transition: .2s;
+    color: #f1fff4;
   }
 
   aside a svg {
@@ -57,21 +57,23 @@
   }
 
   aside a:hover {
-    color: rgb(104, 167, 255);
+    color: #fff;
   }
 
   aside a.aside-item-actived {
-    color: rgb(246, 149, 22);
+    color: #fff;
     font-weight: bold;
-    border-right: 4px solid #f69516;
+    border-right: 4px solid #fff;
   }
 .sidenav-header {
-    height: 49px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #eeeeee;
-    margin-bottom: 40px;
+    background: rgba(255, 255, 255, .3);
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 16px;
 }
 

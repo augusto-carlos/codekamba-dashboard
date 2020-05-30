@@ -69,6 +69,7 @@ div.category-card-header > svg:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .add-category-body form {

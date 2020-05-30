@@ -28,7 +28,7 @@ const Posts = () => {
     async function handleDeletePost(id) {
         try {
             await api.delete(`posts/${id}`)
-            setPosts(posts.filter(post => post._id !== id));
+            setPosts(posts.filter(post => post.id !== id));
         } catch (error) {
             alertify.error("Falha ao eliminar post.")
         }
@@ -49,9 +49,9 @@ const Posts = () => {
 
                 {posts.map(post => (
 
-                    <div className="post-card" key={post._id}>
+                    <div className="post-card" key={post.id}>
                         <div className="post-card-header">
-                            <FiTrash onClick={() => handleDeletePost(post._id)} />
+                            <FiTrash onClick={() => handleDeletePost(post.id)} />
                             <small className="category">{post.category.name}</small>
                             <h3 className="text-large">{post.title}</h3>
                             <small>Por <strong>{post.author.username}</strong></small>
