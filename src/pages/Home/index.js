@@ -4,6 +4,7 @@ import { Line, Bar } from 'react-chartjs-2';
 import { TiMessage, TiUserOutline, TiBookmark, TiHeartOutline, TiDelete } from 'react-icons/ti';
 
 import './styles.css'
+import imgHome from '../../assets/img-home.svg'
 
 export default function Home() {
 
@@ -33,7 +34,6 @@ export default function Home() {
             }
         ]
     };
-
 
     return (
         <div>
@@ -77,19 +77,8 @@ export default function Home() {
             </div>
 
             <div className="chart-container">
-                <div className="chart" style={{ width: '360px', height: '360px' }}>
-                    <Line
-                        data={data}
-                        options={{ maintainAspectRatio: false }}
-                    />
-                </div>
 
-                <div className="chart" style={{ width: '360px', height: '360px' }}>
-                    <Bar
-                        data={data}
-                        options={{ maintainAspectRatio: false }}
-                    />
-                </div>
+                <img src={imgHome} alt="imagem de tela inicial" width="300px" />
 
                 <div className="notification-container">
                     <div className="notification-header">
@@ -103,6 +92,12 @@ export default function Home() {
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
                 </div>
 
+                <div className="chart" style={{ width: '250px', height: '250px' }}>
+                    <Line
+                        data={data}
+                        options={{ maintainAspectRatio: false }}
+                    />
+                </div>
 
             </div>
 
