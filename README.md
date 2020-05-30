@@ -1,6 +1,6 @@
-# Codetrial | dashboard
+# Codetrial-dashboard
 Um dashboard feito para controlar os posts e funcionamento de um bolg pessoal
-![thumbnail dashboard](Captura de Tela (480).png)
+![thumbnail dashboard](https://github.com/augusto-carlos/dashboard-codetrial/blob/master/thumbnail.png)
 
 ## Tecnologias usadas
 React.js 
