@@ -12,19 +12,18 @@ const SideNav = () => {
             <div className="sidenav-header">
                 <h3>Dashboard</h3>
             </div>
-            <h4>Blog</h4>
             <ul>
 
                 <li>
                     <NavLink to="/" exact activeClassName="aside-item-actived">
-                        <TiHome size={18} />
+                        <TiHome size={17} />
                         <label htmlFor="#">Home</label>
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink to="/posts" activeClassName="aside-item-actived">
-                        <TiBookmark size={18} />
+                        <TiBookmark size={17} />
                         <label htmlFor="#">Posts</label>
                     </NavLink>
                 </li>
@@ -38,30 +37,28 @@ const SideNav = () => {
 
                 <li>
                     <NavLink to="/users" activeClassName="aside-item-actived">
-                        <TiUserOutline size={18} />
+                        <TiUserOutline size={17} />
                         <label htmlFor="#">usuários</label>
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink to="/login" activeClassName="aside-item-actived">
-                        <TiLockClosed size={18} />
+                        <TiLockClosed size={17} />
                         <label htmlFor="#">login</label>
                     </NavLink>
                 </li>
-            </ul>
-            <h4>Serviços</h4>
-            <ul>
+
                 <li>
                     <NavLink to="/services" activeClassName="aside-item-actived">
-                        <TiFlashOutline size={18} />
+                        <TiFlashOutline size={17} />
                         <label htmlFor="#">Serviços</label>
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink to="/banco" activeClassName="aside-item-actived">
-                        <TiDatabase size={18} />
+                        <TiDatabase size={17} />
                         <label htmlFor="#">Banco de dados</label>
                     </NavLink>
                 </li>

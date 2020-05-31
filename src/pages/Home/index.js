@@ -1,39 +1,13 @@
 import React from 'react';
-import { Line, Bar } from 'react-chartjs-2';
 
-import { TiMessage, TiUserOutline, TiBookmark, TiHeartOutline, TiDelete } from 'react-icons/ti';
+import { TiMessage, TiUserOutline, TiBookmark, TiHeartOutline } from 'react-icons/ti';
 
 import './styles.css'
 import imgHome from '../../assets/img-home.svg'
+import imgHome2 from '../../assets/img-home2.svg'
+import imgHome3 from '../../assets/img-home3.svg'
 
 export default function Home() {
-
-    const data = {
-        labels: ['Jan', 'Fev', 'Marc', 'Abr', 'Maio', 'Jun', 'Jul'],
-        datasets: [
-            {
-                label: 'Actividade do sistema',
-                fill: true,
-                lineTension: 0.1,
-                backgroundColor: 'rgba(75,192,192,0.09)',
-                borderColor: '#559bfe',
-                borderCapStyle: 'butt',
-                borderDash: [],
-                borderDashOffset: 0.0,
-                borderJoinStyle: 'miter',
-                pointBorderColor: 'rgba(75,192,192,1)',
-                pointBackgroundColor: '#fff',
-                pointBorderWidth: 1,
-                pointHoverRadius: 5,
-                pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-                pointHoverBorderColor: 'rgba(220,220,220,1)',
-                pointHoverBorderWidth: 2,
-                pointRadius: 1,
-                pointHitRadius: 10,
-                data: [65, 59, 80, 81, 56, 55, 40]
-            }
-        ]
-    };
 
     return (
         <div>
@@ -76,27 +50,33 @@ export default function Home() {
 
             </div>
 
-            <div className="chart-container">
+            <div className="home-container">
 
-                <img src={imgHome} alt="imagem de tela inicial" width="300px" />
-
-                <div className="notification-container">
-                    <div className="notification-header">
-
-                        <span>
-                            <TiDelete />
-                        </span>
+                <div className="home-card">
+                    <img src={imgHome} alt="imagem de tela inicial" width="200px" />
+                    <div className="welcome-text">
+                        <h3 className="text-normal">Organizar as ideias</h3>
+                        <small>Lorem, ipsum dolor.</small>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
                     </div>
-                    <h3 className="text-large">Alguma notificação importante.</h3>
-                    <small>Lorem, ipsum dolor.</small>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
                 </div>
 
-                <div className="chart" style={{ width: '250px', height: '250px' }}>
-                    <Line
-                        data={data}
-                        options={{ maintainAspectRatio: false }}
-                    />
+                <div className="home-card">
+                    <img src={imgHome2} alt="imagem de tela inicial" width="200px" />
+                    <div className="welcome-text">
+                        <h3 className="text-normal">Rever os conteúdos</h3>
+                        <small>Lorem, ipsum dolor.</small>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
+                    </div>
+                </div>
+
+                <div className="home-card">
+                    <img src={imgHome3} alt="imagem de tela inicial" width="200px" />
+                    <div className="welcome-text">
+                        <h3 className="text-normal">Guardar as matérias</h3>
+                        <small>Lorem, ipsum dolor.</small>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolores aliquam sed atque maxime incidunt eveniet iusto voluptates mollitia ratione!</p>
+                    </div>
                 </div>
 
             </div>

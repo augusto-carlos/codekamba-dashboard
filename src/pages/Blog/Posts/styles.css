@@ -97,7 +97,7 @@ div.post-card-footer {
     background: #ffffff;
     border: 1px solid #eee;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.05);
     width: 274px;
     font-weight: 600;
     color: #333;
