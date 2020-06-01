@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="Frontend" src=".github/bethehero.png" width="100%">
+  <img alt="Frontend" src=".github/dashboard-web.png" width="100%">
 </p>
 
 <h4 align="center">
@@ -10,7 +10,7 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/augusto-carlos/dashboard-codetrial">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jlenon7/Stack11">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/augusto-carlos/dashboard-codetrial">
   
   <a href="https://github.com/augusto-carlos/dashboard-codetrial/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/augusto-carlos/dashboard-codetrial">
