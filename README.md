@@ -1,11 +1,11 @@
 
 <p align="center">
-  <img alt="Frontend" src=".github/dashboard-web.png" width="100%">
+  <img alt="Frontend" src="https://github.com/augusto-carlos/dashboard-codetrial/blob/master/dashboard-web.png" width="100%">
 </p>
 
-<h4 align="center">
+<h2 align="center">
   Codetrial-dashboard
-</h4>
+</h2>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/augusto-carlos/dashboard-codetrial">
